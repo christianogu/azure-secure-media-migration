@@ -202,14 +202,38 @@ terraform destroy
 
 ## Screenshots
 
-<!-- Add your images to a docs/ folder and uncomment -->
-<!-- ![Storage security settings](docs/storage-security.png) -->
-<!-- ![Lifecycle policy](docs/lifecycle-policy.png) -->
-<!-- ![Migrated footage in container](docs/footage-container.png) -->
-<!-- ![Verification: all files match](docs/verification.png) -->
-<!-- ![KQL: blocked key-based access](docs/blocked-access-kql.png) -->
-<!-- ![terraform apply output](docs/terraform-apply.png) -->
+**Resources deployed by Terraform**
+![Resource group](docs/resource-group.png)
 
----
+**Storage security settings**: key access disabled, TLS 1.2, no anonymous access
+![Storage security](docs/storage-security.png)
 
-*Built by Christian Ogu — [LinkedIn](https://www.linkedin.com/in/christianogu)*
+**Network firewall**: default deny, single allowed IP
+![Storage networking](docs/storage-networking.png)
+
+**Data protection**: soft delete and versioning
+![Data protection](docs/data-protection.png)
+
+**Lifecycle policy**: Hot → Cool → Archive
+![Lifecycle policy](docs/lifecycle-policy.png)
+
+**Least-privilege RBAC**
+![RBAC role](docs/rbac-role.png)
+
+**Migrated footage**
+![Footage container](docs/footage-container.png)
+
+**Diagnostic logging**
+![Diagnostic settings](docs/diagnostic-settings.png)
+
+**Key-based access blocked**
+![Blocked access](docs/blocked-access.png)
+
+**Migration verified**
+![Verification](docs/verification.png)
+
+**Live environment matches code**
+![Terraform plan](docs/terraform-plan.png)
+
+**Blocked attempt captured in logs**
+![KQL results](docs/blocked-access-kql.png)
