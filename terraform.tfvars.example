@@ -1,0 +1,2 @@
+subscription_id = "<your-azure-subscription-id>"
+allowed_ip      = "<your-public-ip>"
